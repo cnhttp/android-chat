@@ -8,16 +8,20 @@ buildscript {
         maven { url 'https://maven.aliyun.com/repository/google' }
         maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
 
-        maven {url 'https://developer.huawei.com/repo/'}
-        maven {url 'https://developer.hihonor.com/repo'}
+        // 荣耀仓库已注释 - 解决网络超时问题
+        // maven {url 'https://developer.huawei.com/repo/'}
+        // maven {url 'https://developer.hihonor.com/repo'}
 
         google()
         mavenCentral()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:8.7.2'
-        classpath 'com.huawei.agconnect:agcp:1.9.1.301'
-        classpath 'com.hihonor.mcs:asplugin:2.0.1.300'
+        
+        // 华为和荣耀插件已注释 - 解决网络超时问题
+        // classpath 'com.huawei.agconnect:agcp:1.9.1.301'
+        // classpath 'com.hihonor.mcs:asplugin:2.0.1.300'
+        
         // classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 
         // NOTE: Do not place your application dependencies here; they belong
@@ -34,9 +38,10 @@ allprojects {
         maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
         maven { url 'https://jitpack.io' }
 
-        maven { url "https://developer.huawei.com/repo/"}
+        // 荣耀和华为仓库已注释
+        // maven { url "https://developer.huawei.com/repo/"}
         maven { url "https://mvn.getui.com/nexus/content/repositories/releases/" }
-        maven { url 'https://developer.hihonor.com/repo/' }
+        // maven { url 'https://developer.hihonor.com/repo/' }
 
         google()
         mavenCentral()
