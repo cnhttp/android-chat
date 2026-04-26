@@ -28,10 +28,10 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     compileOnly fileTree(dir: '../push-aar-dep', include: ['*.aar'])
 
-    // 华为
-    implementation 'com.huawei.hms:push:6.13.0.300'
-    // 荣耀
-    implementation 'com.hihonor.mcs:push:8.0.12.307'
+    // 华为 - 已注释（不需要）
+    // implementation 'com.huawei.hms:push:6.13.0.300'
+    // 荣耀 - 已注释（不需要）
+    // implementation 'com.hihonor.mcs:push:8.0.12.307'
 
     implementation 'androidx.appcompat:appcompat:1.7.0'
     implementation project(':client')
