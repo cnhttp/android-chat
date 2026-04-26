@@ -29,7 +29,7 @@ import cn.wildfire.chat.kit.third.location.viewholder.LocationMessageContentView
 import cn.wildfire.chat.kit.utils.LocaleUtils;
 import cn.wildfirechat.chat.BuildConfig;
 import cn.wildfirechat.chat.R;
-import cn.wildfirechat.push.PushService;
+//import cn.wildfirechat.push.PushService;
 import cn.wildfirechat.remote.ChatManager;
 import cn.wildfirechat.remote.OnConnectToServerListener;
 
@@ -60,7 +60,7 @@ public class MyApp extends BaseApp implements OnConnectToServerListener {
             wfcUIKit.init(this);
             wfcUIKit.setEnableNativeNotification(true);
             wfcUIKit.setAppServiceProvider(AppService.Instance());
-            PushService.init(this, BuildConfig.APPLICATION_ID);
+            //PushService.init(this, BuildConfig.APPLICATION_ID);
             MessageViewHolderManager.getInstance().registerMessageViewHolder(LocationMessageContentViewHolder.class, R.layout.conversation_item_location_send, R.layout.conversation_item_location_send);
             MessageViewHolderManager.getInstance().registerMessageViewHolder(CollectionMessageContentViewHolder.class, R.layout.conversation_item_collection_send, R.layout.conversation_item_collection_receive);
 
