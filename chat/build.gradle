@@ -134,9 +134,9 @@ dependencies {
     implementation 'androidx.multidex:multidex:2.0.1'
 
     // 推送方案选择
-    // 直接对接厂商推送
-    implementation project(':push')
-    implementation fileTree(dir: "../push-aar-dep", include: ["*.aar"])
+    // 直接对接厂商推送（已注释 - 不需要华为/荣耀推送）
+//    implementation project(':push')
+//    implementation fileTree(dir: "../push-aar-dep", include: ["*.aar"])
 
     // 对接个推，需要在个推后台配置厂商通道相关信息
 //    implementation project(':push-getui')
